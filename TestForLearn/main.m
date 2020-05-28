@@ -9,10 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 #import "fishhook.h"
-
+#import "NSMYBlock.h"
 
 static void (*orig_nslog)(NSString *format, ...);
-
+    
 void my_NSLog(NSString *format, ...){
     return orig_nslog(format);
 }
@@ -54,13 +54,19 @@ int main(int argc, char * argv[]) {
             indirect_symbol_bindings[index];
     */
     
-    struct rebinding rebn;
-    rebn.name = "NSLog";
-    rebn.replacement = my_NSLog;
-    rebn.replaced = (void *) &orig_nslog;
+//    struct rebinding rebn;
+//    rebn.name = "NSLog";
+//    rebn.replacement = my_NSLog;
+//    rebn.replaced = (void *) &orig_nslog;
+//
+//    rebind_symbols((struct rebinding[1]){rebn}, 1);
+//
+//    NSLog(@"HEllo");
+//    NSMYBlock *hock = [NSMYBlock new];
+//    NSMYBlock *hockc = [hock copy];
     
-    rebind_symbols((struct rebinding[1]){rebn}, 1);
+    NSMutableString * m = [NSMutableString stringWithFormat:@"222"];
+    NSLog(@"0x%p copy:0x%p",m,[m copy]);
     
-    NSLog(@"HEllo");
     return UIApplicationMain(argc, argv, nil, appDelegateClassName);
 }

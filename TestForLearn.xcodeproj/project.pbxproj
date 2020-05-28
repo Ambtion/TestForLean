@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B814A0862452DE5F00088900 /* NSMYBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = B814A0852452DE5F00088900 /* NSMYBlock.m */; };
+		B888597A247F5ED7008800BA /* NSGCDTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B8885979247F5ED7008800BA /* NSGCDTest.m */; };
 		B8E10B3B24404FE3006594B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E10B3A24404FE3006594B9 /* AppDelegate.m */; };
 		B8E10B3E24404FE3006594B9 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E10B3D24404FE3006594B9 /* SceneDelegate.m */; };
 		B8E10B4124404FE3006594B9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E10B4024404FE3006594B9 /* ViewController.m */; };
@@ -37,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B814A0842452DE5F00088900 /* NSMYBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSMYBlock.h; sourceTree = "<group>"; };
+		B814A0852452DE5F00088900 /* NSMYBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSMYBlock.m; sourceTree = "<group>"; };
+		B8885978247F5ED7008800BA /* NSGCDTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSGCDTest.h; sourceTree = "<group>"; };
+		B8885979247F5ED7008800BA /* NSGCDTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSGCDTest.m; sourceTree = "<group>"; };
 		B8E10B3624404FE3006594B9 /* TestForLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestForLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8E10B3924404FE3006594B9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B8E10B3A24404FE3006594B9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -115,6 +121,10 @@
 				B8E10B3D24404FE3006594B9 /* SceneDelegate.m */,
 				B8E10B3F24404FE3006594B9 /* ViewController.h */,
 				B8E10B4024404FE3006594B9 /* ViewController.m */,
+				B814A0842452DE5F00088900 /* NSMYBlock.h */,
+				B814A0852452DE5F00088900 /* NSMYBlock.m */,
+				B8885978247F5ED7008800BA /* NSGCDTest.h */,
+				B8885979247F5ED7008800BA /* NSGCDTest.m */,
 				B8E10B4224404FE3006594B9 /* Main.storyboard */,
 				B8E10B4524404FE8006594B9 /* Assets.xcassets */,
 				B8E10B4724404FE8006594B9 /* LaunchScreen.storyboard */,
@@ -272,8 +282,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B888597A247F5ED7008800BA /* NSGCDTest.m in Sources */,
 				B8E10B4124404FE3006594B9 /* ViewController.m in Sources */,
 				B8E10BAA244416AD006594B9 /* fishhook.c in Sources */,
+				B814A0862452DE5F00088900 /* NSMYBlock.m in Sources */,
 				B8E10B3B24404FE3006594B9 /* AppDelegate.m in Sources */,
 				B8E10B4C24404FE8006594B9 /* main.m in Sources */,
 				B8E10B3E24404FE3006594B9 /* SceneDelegate.m in Sources */,
@@ -454,6 +466,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.baidu.map2342;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = xxldevxing;
@@ -474,6 +487,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.baidu.map2342;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = xxldevxing;

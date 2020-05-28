@@ -199,6 +199,7 @@ static void rebind_symbols_for_image(struct rebindings_entry *rebindings,
     return;
   }
     
+    printf("slide = %ld\n",slide );
   segment_command_t *cur_seg_cmd;
   segment_command_t *linkedit_segment = NULL;
   struct symtab_command* symtab_cmd = NULL;
