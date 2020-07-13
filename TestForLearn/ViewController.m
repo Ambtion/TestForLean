@@ -75,7 +75,6 @@
 #pragma mark - File Manu
 #pragma mark dic
 
-
 /*
  Document //用户生成的数据（聊天记录，下载的文件等），将应用程序的数据文件保存在该目录下。不过这些数据类型仅限于不可再生的数据，会被iTunes同步。
  Library //苹果建议用来存放默认设置或其它状态信息。
@@ -83,8 +82,11 @@
  ----Library/Preferences //应用程序的偏好设置文件。我们使用NSUserDefaults写的设置数据都会保存到该目录下的一个plist文件中。会被iTunes同步
  Temp //各种临时文件，保存应用再次启动时不需要的文件。该目录下的东西随时有可能被系统清理掉。不会被iTunes同步
  
+ https://medium.com/@lucideus/understanding-the-structure-of-an-ios-application-a3144f1140d4#:~:text=The%20Bundle%20directory%20or%20the,particular%20version%20of%20an%20application.
+ 
  https://developer.apple.com/library/archive/documentation/General/Conceptual/iCloudDesignGuide/Chapters/iCloudFundametals.html
  */
+
 - (NSString *)_modulDecoment {
     
     NSString *document = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).lastObject;
