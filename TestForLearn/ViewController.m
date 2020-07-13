@@ -85,6 +85,9 @@
  https://medium.com/@lucideus/understanding-the-structure-of-an-ios-application-a3144f1140d4#:~:text=The%20Bundle%20directory%20or%20the,particular%20version%20of%20an%20application.
  
  https://developer.apple.com/library/archive/documentation/General/Conceptual/iCloudDesignGuide/Chapters/iCloudFundametals.html
+ 
+ https://www.jianshu.com/p/50348b35c986
+ 
  */
 
 - (NSString *)_modulDecoment {
