@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSMYBlock : NSObject
 
+@property (nonatomic ,strong)id block;
+
 - (void)testBlock;
 
 

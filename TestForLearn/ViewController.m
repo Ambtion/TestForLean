@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import <objc/runtime.h>
 #import "NSMYBlock.h"
-#import "NSGCDTest.h"
+#import <FBRetainCycleDetector/FBRetainCycleDetector.h>
 
 
 @interface MYNSNode : NSObject
@@ -30,7 +30,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [[NSGCDTest new] testAsyRead];
+    
+    NSMYBlock * blockTest = [NSMYBlock new];
+    [blockTest testBlock];
+    
+    FBRetainCycleDetector *detector = [FBRetainCycleDetector new];
+    [detector addCandidate:blockTest];
+    NSSet *retainCycles = [detector findRetainCycles];
+    NSLog(@"%@", retainCycles);
     
 //    NSLog(@"class_isMetaClass %d",class_isMetaClass([MYNSNode class]));
     
