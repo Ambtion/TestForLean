@@ -60,14 +60,13 @@
          return [NSURL fileURLWithPath:tmpModelPath];
         
     } completionHandler:^(NSURLResponse *response, NSURL *filePath, NSError *error) {
-        
+        if (error) return;
         [weakSelf _compileModelWithUrl:filePath];
         [weakSelf _predict:weakSelf.imageView.image];
     }];
     
 
     [downloadTask resume];
-    
     
 }
 
