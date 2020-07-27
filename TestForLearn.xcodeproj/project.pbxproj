@@ -51,6 +51,7 @@
 		A72CE7DEF7B16A496DCA2951 /* Pods-TestForLearn-TestForLearnTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestForLearn-TestForLearnTests.debug.xcconfig"; path = "Target Support Files/Pods-TestForLearn-TestForLearnTests/Pods-TestForLearn-TestForLearnTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AA2971033AD6BD79A36E966A /* Pods-TestForLearn-TestForLearnTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestForLearn-TestForLearnTests.release.xcconfig"; path = "Target Support Files/Pods-TestForLearn-TestForLearnTests/Pods-TestForLearn-TestForLearnTests.release.xcconfig"; sourceTree = "<group>"; };
 		AAC4FF6DF8A6125001C90027 /* Pods-TestForLearn-TestForLearnUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestForLearn-TestForLearnUITests.release.xcconfig"; path = "Target Support Files/Pods-TestForLearn-TestForLearnUITests/Pods-TestForLearn-TestForLearnUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B86E24D124CE886A0092ED34 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		B88C1F5024BEF28000A395F1 /* STLUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STLUtils.swift; sourceTree = "<group>"; };
 		B8C7CF3124B702A3001DD252 /* cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat.jpg; sourceTree = "<group>"; };
 		B8E10B3624404FE3006594B9 /* TestForLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestForLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -170,6 +171,7 @@
 				B8E10B3F24404FE3006594B9 /* ViewController.h */,
 				B8E10B4024404FE3006594B9 /* ViewController.m */,
 				B88C1F5024BEF28000A395F1 /* STLUtils.swift */,
+				B86E24D124CE886A0092ED34 /* Bridging-Header.h */,
 				B8EDA0BF24B86378001B7B94 /* TLUtils.h */,
 				B8EDA0C024B86378001B7B94 /* TLUtils.m */,
 				B8EDA0F224B87DD9001B7B94 /* MobileNet.h */,
@@ -601,6 +603,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = S544T4W3Q3;
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = TestForLearn/Info.plist;
@@ -613,7 +616,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.baidu.map2342;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = xxldevxing;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestForLearn/Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "MYTestLearn-Swift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -628,6 +632,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = S544T4W3Q3;
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = TestForLearn/Info.plist;
@@ -640,7 +645,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.baidu.map2342;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = xxldevxing;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestForLearn/Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "MYTestLearn-Swift.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

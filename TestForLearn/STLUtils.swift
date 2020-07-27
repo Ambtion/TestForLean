@@ -8,27 +8,32 @@
 
 import UIKit
 
-class STLUtils: NSObject {
+@objcMembers
+class STLUtils : NSObject {
     
-    func imageMemoryLength(image : UIImage) -> Int {
-        
-        let cgImage = image.cgImage
-        
-        if let tmpImage = cgImage {
-            
-            let bytesperRow : Int = tmpImage.bitsPerPixel
-            
-            return Int(tmpImage.width) * Int(tmpImage.height) * bytesperRow / 8
-        
-        } else {
-            
-            return 0
-            
-        }
+    let myValue = 2;
     
+
+    class func imageMemoryLength(image : UIImage) -> Int {
+        
+//        let cgImage = image.cgImage
+//
+//        if let tmpImage = cgImage {
+//
+//            let bytesperRow : Int = tmpImage.bitsPerPixel
+//
+//            return Int(tmpImage.width) * Int(tmpImage.height) * bytesperRow / 8
+//
+//        } else {
+//
+//            return 0
+//
+//        }
+        
+        return Int(TLUtils.imageMemoryLength(image))
     }
     
-    func scaleImageToSize(image : UIImage, widthAndHeigth : CGFloat) -> UIImage? {
+    static func scaleImageToSize(image : UIImage, widthAndHeigth : CGFloat) -> UIImage? {
         
         let  size = CGSize(width: widthAndHeigth, height: widthAndHeigth)
         UIGraphicsBeginImageContextWithOptions(size, true, 1)
@@ -67,9 +72,5 @@ class STLUtils: NSObject {
         return scaleImage!
         
     }
-    
-    
-   
-    
-    
+        
 }

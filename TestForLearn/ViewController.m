@@ -11,6 +11,7 @@
 #import "MobileNetV2Int8LUT.h"
 
 #import <AFNetworking/AFNetworking.h>
+#import "MYTestLearn-Swift.h"
 
 @interface ViewController ()
 
@@ -30,15 +31,19 @@
     self.imageView.image = [UIImage imageNamed:@"cat.jpg"];
     [self.view addSubview:self.imageView];
     
+
+    NSLog(@"length %lu", [STLUtils imageMemoryLengthWithImage:self.imageView.image]);
+    
+    
 //    NSLog(@"length %lu", [TLUtils imageMemoryLength:imageView.image]);
 //    UIImage * saleImage  = [TLUtils scaleImage:imageView.image ToDatalength:600000];
 //    imageView.image = saleImage;
 //    NSLog(@"length %lu", [TLUtils imageMemoryLength:imageView.image]);
 
-    self.label = [[UILabel alloc] initWithFrame:CGRectMake(0, 200, self.view.frame.size.width, 200)];
-    [self.view addSubview:self.label];
-
-    [self downModule];
+//    self.label = [[UILabel alloc] initWithFrame:CGRectMake(0, 200, self.view.frame.size.width, 200)];
+//    [self.view addSubview:self.label];
+//
+//    [self downModule];
     
 }
 
